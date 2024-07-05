@@ -1,0 +1,131 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: 1em;
+     background-color: #222222;
+     color: white;
+     font-family: sans-serif;
+}
+
+.cityInput {
+     padding: 0.6em;
+     background-color: #383838;
+     border-radius: 4px;
+     margin-bottom: 1em;
+}
+
+input,
+#getWeatherBtn {
+     padding: 0.6em;
+     border: 1px solid #535353;
+     background-color: #222222;
+     color: white;
+     border-radius: 5px;
+}
+
+#getWeatherBtn:hover {
+     background-color: #535353;
+     cursor: pointer;
+}
+
+input:focus {
+     border: none;
+}
+
+.card {
+     background-color: #383838;
+     padding: 1em;
+     width: 50%;
+     text-align: center;
+     min-height: 70dvh;
+     display: none;
+     flex-direction: column;
+     justify-content: space-evenly;
+     border-radius: 10px;
+     font-size: 1.3em;
+     align-items: center;
+}
+
+#erorr {
+     color: red;
+     font-size: 1.2em;
+     margin-top: 1em;
+}
+
+img {
+     max-width: 15dvw;
+}
+
+.weatherInfo {
+     display: grid;
+     grid-template-columns: repeat(2, 5em);
+     margin-top: 1em;
+}
+
+h4 {
+     font-size: 0.6em;
+     margin-bottom: 0.7em;
+     color: #9d9d9d;
+}
+
+@media (max-width: 440px) {
+     body {
+          font-size: 14px;
+     }
+
+     .card {
+          width: 60%;
+          min-height: 60dvh;
+     }
+
+     img {
+          max-width: 25dvw;
+     }
+}
+
+@media (max-width: 350px) {
+     body {
+          font-size: 17px;
+     }
+
+     #desc {
+          font-size: 1.3em;
+     }
+
+     .weatherInfo {
+          font-size: 1.2em;
+     }
+
+     .card {
+          width: 70%;
+     }
+
+}
+
+@media (max-width: 325px) {
+
+     body {
+          font-size: 14px;
+     }
+
+     input,
+     #getWeatherBtn {
+          margin-bottom: 0.7em;
+          width: 90%;
+     }
+
+     .cityInput {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+
+}
