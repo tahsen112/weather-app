@@ -13,7 +13,8 @@ cityInput.addEventListener("click", async event => {
 
      event.preventDefault();
 
-     const city = cityInp.value;
+     const city = cityInp.value.trim();
+     console.log(city);
 
      card.style.display = `flex`;
 
